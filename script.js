@@ -1,7 +1,3 @@
-// ============================================
-// ROTATING TITLE ANIMATION
-// ============================================
-
 const ROTATING_TITLES = [
     "Software Developer",
     "Business Analyst",
@@ -20,7 +16,7 @@ function rotateTitle() {
 }
 
 rotateTitle();
-setInterval(rotateTitle, 4000); // Change every 4 seconds
+setInterval(rotateTitle, 4000);
 
 function updateActiveNavLink() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
