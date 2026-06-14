@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Mabasa Hlawutelo</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/mh-logo.png" alt="MH Logo" class="nav-logo">
+                <div class="nav-text">
+                    <h2>Mabasa Hlawutelo</h2>
+                    <p>Software Developer</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="education.html" class="nav-link active">Education</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="resume/hlawutelo_resume.pdf" class="nav-link btn-download" download>Download CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <p class="section-label">Learning Journey</p>
+                <h1 class="section-heading">Education & <span class="highlight">Certifications</span></h1>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto 0;">
+                    A commitment to continuous learning and professional development, validated by industry-recognized certifications.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-orange); margin-bottom: 0.5rem;">1</div>
+                    <div style="color: var(--text-secondary);">Diploma - Expected 2027</div>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary-orange); margin-bottom: 0.5rem;">16</div>
+                    <div style="color: var(--text-secondary);">Certifications</div>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; justify-content: center; margin-bottom: 3rem; flex-wrap: wrap;">
+                <button class="btn btn-primary" onclick="filterEducation('all')">All</button>
+                <button class="btn btn-outline" onclick="filterEducation('education')">Education</button>
+                <button class="btn btn-outline" onclick="filterEducation('certification')">Certifications</button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+                <div class="card education-item" data-type="education">
+                    <div style="display: flex; gap: 1.5rem;">
+                        <div style="width: 50px; height: 50px; background: var(--primary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6m0 0v6m0-6H2m0 0v6m0-6V4m0 0h20M4 4h16v6H4z"></path></svg>
+                        </div>
+                        <div style="flex: 1;">
+                            <h3 style="color: var(--text-primary); margin: 0 0 0.5rem 0;">Diploma in Information Technology - Software Development (Expected 2027)</h3>
+                            <p style="color: var(--primary-orange); margin: 0 0 0.5rem 0; font-weight: 600;">Vaal University of Technology</p>
+                            <p style="color: var(--text-muted); margin: 0;">Final Year Student. Comprehensive program covering software engineering principles, database design, web development, and enterprise application development.</p>
+                            <p style="color: var(--text-muted); margin: 1rem 0 0 0; font-size: 0.875rem;">Expected Graduation: 2027</p>
+                            <span class="tag" style="margin-top: 1rem; display: inline-block;">Education</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+                    <div class="card certification-item" data-type="certification">
+                        <div style="display: flex; gap: 1.5rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path></svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="color: var(--text-primary); margin: 0 0 0.5rem 0;">Cisco Certifications (10 Certifications)</h3>
+                                <p style="color: var(--text-muted); margin: 0;">
+                                    CCNAv7: Introduction to Networks • Computer Hardware Basics • Cyber Threat Management • Endpoint Security • Ethical Hacker • Introduction to Cybersecurity • Junior Cybersecurity Analyst Career Path Exam • Network Defense • Networking Basics • Networking Devices and Initial Configuration
+                                </p>
+                                <span class="tag" style="margin-top: 1rem; display: inline-block;">Certification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card certification-item" data-type="certification">
+                        <div style="display: flex; gap: 1.5rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path></svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="color: var(--text-primary); margin: 0 0 0.5rem 0;">IBM Certification</h3>
+                                <p style="color: var(--text-muted); margin: 0;">
+                                    Cybersecurity Fundamentals
+                                </p>
+                                <span class="tag" style="margin-top: 1rem; display: inline-block;">Certification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card certification-item" data-type="certification">
+                        <div style="display: flex; gap: 1.5rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path></svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="color: var(--text-primary); margin: 0 0 0.5rem 0;">Huawei Certifications (2 Certifications)</h3>
+                                <p style="color: var(--text-muted); margin: 0;">
+                                    Cloud Service Computing Micro-Certification • Data Link Layer Network Technology Micro-Certification
+                                </p>
+                                <span class="tag" style="margin-top: 1rem; display: inline-block;">Certification</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card certification-item" data-type="certification">
+                        <div style="display: flex; gap: 1.5rem;">
+                            <div style="width: 50px; height: 50px; background: var(--primary-orange); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"></path></svg>
+                            </div>
+                            <div style="flex: 1;">
+                                <h3 style="color: var(--text-primary); margin: 0 0 0.5rem 0;">Oracle Professional Certificate</h3>
+                                <p style="color: var(--text-muted); margin: 0;">
+                                    Generative AI Professional
+                                </p>
+                                <span class="tag" style="margin-top: 1rem; display: inline-block;">Certification</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Mabasa Hlawutelo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterEducation(type) {
+            const items = document.querySelectorAll('.education-item, .certification-item');
+            const buttons = document.querySelectorAll('.btn');
+            
+            buttons.forEach(btn => btn.classList.remove('btn-primary'));
+            buttons.forEach(btn => btn.classList.add('btn-outline'));
+            event.target.classList.remove('btn-outline');
+            event.target.classList.add('btn-primary');
+            
+            items.forEach(item => {
+                if (type === 'all') {
+                    item.style.display = 'block';
+                } else if (item.dataset.type === type) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
